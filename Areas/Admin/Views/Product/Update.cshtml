@@ -1,0 +1,52 @@
+﻿@model Product
+
+
+<div class="container">
+	<div class="row">
+
+
+		<form method="post" asp-action="Update">
+			<div class="form-group">
+				<label for="title">Title</label>
+				<input asp-for="Title" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Title">
+				<span class="text-danger" asp-validation-for="Title"></span>
+			</div>
+
+			<div class="form-group">
+				<label for="Price">Price</label>
+				<input asp-for="Price" class="form-control" id="Price" aria-describedby="emailHelp" placeholder="Price">
+				<span class="text-danger" asp-validation-for="Price"></span>
+			</div>
+
+			<div class="form-group">
+				<label for="ImagePath">ImagePath</label>
+				<input asp-for="ImagePath" class="form-control" id="ImagePath" aria-describedby="emailHelp" placeholder="ImagePath">
+				<span class="text-danger" asp-validation-for="ImagePath"></span>
+			</div>
+			<div class="form-group">
+				<label for="ImageName">ImageName</label>
+				<input asp-for="ImageName" class="form-control" id="ImageName" aria-describedby="emailHelp" placeholder="ImageName">
+				<span class="text-danger" asp-validation-for="ImageName"></span>
+			</div>
+			@* <div class="form-group">
+				<label for="CreatedDate">CreatedDate</label>
+				<input asp-for="CreatedDate" class="form-control" id="CreatedDate" aria-describedby="emailHelp" placeholder="CreatedDate">
+				<span class="text-danger" asp-validation-for="CreatedDate"></span>
+			</div>
+			<div class="form-group">
+				<label for="UpdatedDate">UpdatedDate</label>
+				<input asp-for="UpdatedDate" class="form-control" id="UpdatedDate" aria-describedby="emailHelp" placeholder="UpdatedDate">
+				<span class="text-danger" asp-validation-for="UpdatedDate"></span>
+			</div>
+			<div class="form-group">
+				<label for="IsDeleted">IsDeleted</label>
+				<input asp-for="IsDeleted" class="form-control" id="IsDeleted" aria-describedby="emailHelp" placeholder="IsDeleted">
+				<span class="text-danger" asp-validation-for="IsDeleted"></span>
+			</div> *@
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+			<a asp-action="Index" class="btn btn-secondary">Cancel</a>
+		</form>
+
+	</div>
+</div>
