@@ -1,0 +1,48 @@
+﻿@model List<Employee>
+
+<div class="container">
+	<div class="row">
+
+		<a class="btn btn-success" asp-action="Create" >Create</a>
+		<table class="table table-hover table-dark">
+			<thead>
+				<tr>
+					<th scope="col">Id</th>
+					<th scope="col">Name</th>
+					<th scope="col">Surname</th>
+					<th scope="col">Position</th>
+					<th scope="col">Description</th>
+					<th scope="col">ImageName</th>
+					<th scope="col">ImageUrl</th>
+					<th scope="col">Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				@foreach (Employee employee in Model)
+				{
+					<tr>
+						<th scope="row">@employee.Id</th>
+						<td>@employee.FirstName</td>
+						<td>@employee.LastName</td>
+						<td>@employee.Position</td>
+						<td>@employee.Desciption</td>
+						<td>@employee.ImageName</td>
+						<td> <img src="~/assets/images/@employee.ImageUrl" width="30" height="30" alt="Alternate Text" /></td>
+						<td style="display:flex" class="gap-2">
+							<a asp-action="Update" asp-route-id="@employee.Id" class="btn btn-warning">Update</a>
+
+							<a asp-action="Delete" asp-route-id="@employee.Id" class="btn btn-danger">Delete</a>
+
+						</td>
+
+
+					</tr>
+				}
+
+
+
+			</tbody>
+		</table>
+	</div>
+</div>

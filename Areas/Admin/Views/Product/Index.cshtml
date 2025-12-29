@@ -11,7 +11,6 @@
 					<th scope="col">Title</th>
 					<th scope="col">Price</th>
 					<th scope="col">ImagePath</th>
-					<th scope="col">ImageName</th>
 					<th scope="col">CreatedDate</th>
 					<th scope="col">UpdatedDate</th>
 					<th scope="col">IsDeleted</th>
@@ -26,10 +25,9 @@
 						<th scope="row">@product.Id</th>
 						<td>@product.Title</td>
 						<td>@product.Price</td>
-						<td> <img src="~/assets/images/@product.ImagePath" width="30" height="30" alt="Alternate Text" /></td>
-						<td>@product.ImageName</td>
-						<td>@product.UpdatedDate</td>
+						<td> <img src="~/assets/images/@product.ImageName" width="30" height="30" alt="Alternate Text" /></td>
 						<td>@product.CreatedDate</td>
+						<td>@product.UpdatedDate</td>
 						<td>@product.IsDeleted</td>
 						<td>
 							<a asp-action="Update" asp-route-id="@product.Id" class="btn btn-warning">Update</a>

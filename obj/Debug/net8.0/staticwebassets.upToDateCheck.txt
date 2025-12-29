@@ -862,9 +862,16 @@ wwwroot\admin\assets\vendors\typeahead.js\typeahead.bundle.min.js
 wwwroot\assets\css\bootstrap.min.css
 wwwroot\assets\css\style.css
 wwwroot\assets\css\tiny-slider.css
+wwwroot\assets\images\05575588-041d-431c-8b11-c95909ee6ba82025-11-7_8-41-41-581.bmp
+wwwroot\assets\images\1eb4963e-ee45-457e-9dd6-efec89f9b4602025-11-7_8-41-41-581.bmp
+wwwroot\assets\images\54e1b735-14a1-45b3-bf9c-1f0af7cd68b52025-10-1_8-22-41-974.bmp
+wwwroot\assets\images\8f9e5d22-5af5-49fb-9b6e-c98e96f9a7be2025-11-7_8-41-41-581.bmp
+wwwroot\assets\images\96145fc0-03ec-4776-8aba-6a4c4d8e83202025-11-7_8-41-41-581.bmp
+wwwroot\assets\images\980b1405-fa80-4c7a-99fb-a5af9335669d2025-10-1_8-22-41-974.bmp
 wwwroot\assets\images\bag.svg
 wwwroot\assets\images\bowl-2.png
 wwwroot\assets\images\bowl-3.png
+wwwroot\assets\images\c626906a-a92c-445d-a401-88d62cf170832025-11-7_8-41-41-581.bmp
 wwwroot\assets\images\cart.svg
 wwwroot\assets\images\couch.png
 wwwroot\assets\images\cross.svg
@@ -872,6 +879,7 @@ wwwroot\assets\images\dots-green.svg
 wwwroot\assets\images\dots-light.svg
 wwwroot\assets\images\dots-yellow.svg
 wwwroot\assets\images\envelope-outline.svg
+wwwroot\assets\images\f9605ff8-a198-4f98-9453-f90666b6bc282025-10-1_8-22-41-974.bmp
 wwwroot\assets\images\img-grid-1.jpg
 wwwroot\assets\images\img-grid-2.jpg
 wwwroot\assets\images\img-grid-3.jpg

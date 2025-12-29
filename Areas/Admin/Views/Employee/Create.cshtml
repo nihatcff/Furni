@@ -1,0 +1,66 @@
+﻿@model Employee
+
+
+<div class="container">
+	<div class="row">
+
+		<h2>Create Employee</h2>
+
+		<form method="post" asp-action="Create">
+			<div class="form-group">
+				<label for="FirstName">FirstName</label>
+				<input asp-for="FirstName" class="form-control" id="FirstName" aria-describedby="emailHelp" placeholder="FirstName">
+				<span class="text-danger" asp-validation-for="FirstName"></span>
+			</div>
+
+			<div class="form-group">
+				<label for="LastName">LastName</label>
+				<input asp-for="LastName" class="form-control" id="LastName" aria-describedby="emailHelp" placeholder="LastName">
+				<span class="text-danger" asp-validation-for="LastName"></span>
+			</div>
+
+			<div class="form-group">
+				<label for="Position">Position</label>
+				<input asp-for="Position" class="form-control" id="Position" aria-describedby="emailHelp" placeholder="Position">
+				<span class="text-danger" asp-validation-for="Position"></span>
+			</div>
+
+			<div class="form-group">
+				<label for="Desciption">Desciption</label>
+				<input asp-for="Desciption" class="form-control" id="Desciption" aria-describedby="emailHelp" placeholder="Desciption">
+				<span class="text-danger" asp-validation-for="Desciption"></span>
+			</div>
+
+			<div class="form-group">
+				<label for="ImageName">ImageName</label>
+				<input asp-for="ImageName" class="form-control" id="ImageName" aria-describedby="emailHelp" placeholder="ImageName">
+				<span class="text-danger" asp-validation-for="ImageName"></span>
+			</div>
+
+			<div class="form-group">
+				<label for="ImageUrl">ImageUrl</label>ImageUrl
+				<input asp-for="ImageUrl" class="form-control" id="ImageUrl" aria-describedby="emailHelp" placeholder="ImageUrl">
+				<span class="text-danger" asp-validation-for="ImageUrl"></span>
+			</div>
+			@* <div class="form-group">
+				<label for="CreatedDate">CreatedDate</label>
+				<input asp-for="CreatedDate" class="form-control" id="CreatedDate" aria-describedby="emailHelp" placeholder="CreatedDate">
+				<span class="text-danger" asp-validation-for="CreatedDate"></span>
+			</div>
+			<div class="form-group">
+				<label for="UpdatedDate">UpdatedDate</label>
+				<input asp-for="UpdatedDate" class="form-control" id="UpdatedDate" aria-describedby="emailHelp" placeholder="UpdatedDate">
+				<span class="text-danger" asp-validation-for="UpdatedDate"></span>
+			</div>
+			<div class="form-group">
+				<label for="IsDeleted">IsDeleted</label>
+				<input asp-for="IsDeleted" class="form-control" id="IsDeleted" aria-describedby="emailHelp" placeholder="IsDeleted">
+				<span class="text-danger" asp-validation-for="IsDeleted"></span>
+			</div> *@
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+			<a asp-action="Index" class="btn btn-secondary">Cancel</a>
+		</form>
+
+	</div>
+</div>
