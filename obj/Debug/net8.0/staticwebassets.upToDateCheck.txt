@@ -905,3 +905,6 @@ wwwroot\assets\js\bootstrap.bundle.min.js
 wwwroot\assets\js\custom.js
 wwwroot\assets\js\tiny-slider.js
 wwwroot\assets\scss\style.scss
+wwwroot\assets\images\a7da1669-3fa3-4738-85a7-ba4a6b8e30d2pexels-maria-geller-801267-2127024.jpg
+wwwroot\assets\images\728c74a0-e094-45f3-b952-28ad44f459cepexels-maria-geller-801267-2127024.jpg
+wwwroot\assets\images\f0729bf8-e58b-4274-b3d8-3b3027e073e7pexels-maria-geller-801267-2127024.jpg

@@ -15,7 +15,7 @@ namespace Furni.Models
         public string Position { get; set; }
         public string? Desciption { get; set; }
         public string ImageName { get; set; }
-        [Required]
         public string ImageUrl { get; set; }
+        public ICollection<EmployeeService> EmployeeServices { get; set; }
     }
 }

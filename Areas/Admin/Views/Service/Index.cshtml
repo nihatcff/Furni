@@ -1,0 +1,53 @@
+﻿@model List<Service>
+
+<div class="container">
+	<div class="row">
+
+		<a class="btn btn-success" asp-action="Create">Create</a>
+		<table class="table table-hover table-dark">
+			<thead>
+				<tr>
+					<th scope="col">Id</th>
+					<th scope="col">Name</th>
+					<th scope="col">Description</th>
+					<th scope="col">Image</th>
+					<th scope="col">CreatedDate</th>
+					<th scope="col">UpdatedDate</th>
+					<th scope="col">IsDeleted</th>
+					<th scope="col">Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				@foreach (Service service in Model)
+				{
+					<tr>
+						<th scope="row">@service.Id</th>
+						<td>@service.Name</td>
+						<td>@service.Description</td>
+						<td> <img src="~/assets/images/@service.ImageName" width="30" height="30" alt="Alternate Text" /></td>
+						<td>@service.CreatedDate</td>
+						<td>@service.UpdatedDate</td>
+						<td>@service.IsDeleted</td>
+						<td>
+							<a asp-action="Update" asp-route-id="@service.Id" class="btn btn-warning">Update</a>
+
+							<a asp-action="Delete" asp-route-id="@service.Id" class="btn btn-danger">Delete</a>
+
+							<form asp-action="SoftDelete" asp-route-id="@service.Id" method="post" style="display:inline">
+								<button type="submit" class="btn btn-success">
+									@(service.IsDeleted ? "Restore" : "Soft Delete")
+								</button>
+							</form>
+						</td>
+
+
+					</tr>
+				}
+
+
+
+			</tbody>
+		</table>
+	</div>
+</div>

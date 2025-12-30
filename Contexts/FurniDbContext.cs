@@ -13,5 +13,6 @@ public class FurniDbContext: DbContext
     public DbSet<Product> Products { get; set; }
     public DbSet<Employee> Employees { get; set; }
     public DbSet<Blog> Blogs { get; set; }
+    public DbSet<Service> Services { get; set; }
 
 }

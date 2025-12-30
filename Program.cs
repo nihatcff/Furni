@@ -14,7 +14,7 @@ namespace Furni
 
             builder.Services.AddDbContext<FurniDbContext>(option =>
             {
-                option.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+                option.UseSqlServer(builder.Configuration.GetConnectionString("Home"));
             });
 
             var app = builder.Build();
